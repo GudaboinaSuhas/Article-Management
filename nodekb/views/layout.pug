@@ -20,6 +20,11 @@ html
                             a(href='/') Home
                         li
                             a(href='/articles/add') Add Articles
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='/users/register') Register
+                        li
+                            a(href='/users/login') Login
 
         .container
             != messages('message',locals)
@@ -28,6 +33,7 @@ html
                     div(class="alert alert-danger") #{error.msg}
             block content
             br
+        .container    
             hr
             footer
                 p Copyright &copy; 2018
