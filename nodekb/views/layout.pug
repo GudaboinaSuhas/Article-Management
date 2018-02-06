@@ -18,8 +18,9 @@ html
                     ul.nav.navbar-nav
                         li
                             a(href='/') Home
-                        li
-                            a(href='/articles/add') Add Articles
+                        if user
+                            li
+                                a(href='/articles/add') Add Articles
                     ul.nav.navbar-nav.navbar-right
                         if user
                             li
